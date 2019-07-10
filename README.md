@@ -338,7 +338,7 @@ The approach I used was to use samples from the existing data set and apply shea
 
 The first solution I implemented found the sign with the most images in the sample set.  It then generated images for all other signs until the total number of images for each sign was equal.  After evaluating this approach, I realized that all signs need some generated data.  Next, I generated images so that each sign's sample count would be twice the number of the sign with largest amount of data.  This means that the sign with the most original images would have 50% of its data generated and every other sign would have more than 50% of its data generated.
 
-With the size of the training set now significantly larger, it took much longer to train.  After a few epochs, I noticed that my accuracy was consistently coming to 2.3%, which is no better than randomly guessing a classification for a sign.  For this reason, I abandonned generating any additional samples for the training set in the final implementation.
+With the size of the training set now significantly larger, it took much longer to train.  After a few epochs, I noticed that my accuracy was consistently coming to 2.3%, which is no better than randomly guessing a classification for a sign.  For this reason, I abandoned generating any additional samples for the training set in the final implementation.
 
 
 ```python
